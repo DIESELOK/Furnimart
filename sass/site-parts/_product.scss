@@ -1,0 +1,98 @@
+.products{
+  overflow: hidden;
+  background-color: #f3f3f3;
+  h2{
+    position: relative;
+    margin: 40px 0 50px;
+    text-align: center;
+    color: #373737;
+    font-size: 36px;
+    font-weight: 500;
+    &:after{
+      content: "";
+      position: absolute;
+      display:block;
+      width: 100%;
+      margin-top: 15px;
+      height: 2px;
+      background-color: #ddd;
+    }
+  }
+  p{
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .products-list{
+    margin-top: 15px;
+    li{
+      position: relative;
+      overflow: hidden;
+      display:inline-block;
+      width: 263px;
+      height: 280px;
+      border: 3px solid #e1e1e1;
+      img{
+        width: 100%;
+      }
+      .rollover{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding: 10px;
+        opacity: 0;
+        background-color: #e1e1e1;
+        &:hover{
+          opacity: 1;
+        }
+        h4{
+          margin:10px 0;
+          color: black;
+          font-family: 'Open Sans';
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p{
+          text-align: left;
+          margin-bottom: 30px;
+        }
+        .blue-link{
+          text-align: center;
+          display:inline-block;
+          padding-top: 5px;
+          width: 104px;
+          height: 29px;
+          background-color: #2797d5;
+          color: white;
+          font-family: "Open Sans";
+          font-size: 13px;
+          font-weight: 600;
+        }
+        .green-link{
+          text-align: center;
+          display:inline-block;
+          padding-top: 5px;
+          width: 104px;
+          height: 29px;
+          background-color: #6aad44;
+          color: white;
+          font-family: "Open Sans";
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+      h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 18px;
+        opacity: 0.9;
+        background-color: #e1e1e1;
+        height: 49px;
+      }
+    }
+  }
+}

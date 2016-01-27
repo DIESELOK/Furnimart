@@ -1,0 +1,424 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,300,100,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px 'Raleway', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 14px 'Raleway', sans-serif;
+  color: #4C8BBF;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+header {
+  background-color: white;
+}
+@media screen and (min-width: 800px) {
+  /* line 3, ../sass/layout/_header.scss */
+  header h1 {
+    float: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 9, ../sass/layout/_header.scss */
+  header .main-navigation ul {
+    float: right;
+  }
+}
+/* line 13, ../sass/layout/_header.scss */
+header .main-navigation ul li {
+  display: block;
+  margin: 10px auto;
+  padding-top: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 13, ../sass/layout/_header.scss */
+  header .main-navigation ul li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+/* line 22, ../sass/layout/_header.scss */
+header .main-navigation ul li a {
+  padding-top: 10px;
+  font-size: 20px;
+  color: black;
+  transition: 0.5s;
+}
+/* line 27, ../sass/layout/_header.scss */
+header .main-navigation ul li a:hover {
+  border-top: 5px solid #2797d5;
+  color: #c2265c;
+}
+
+/* line 1, ../sass/site-parts/_hero.scss */
+.hero {
+  overflow: hidden;
+  background-color: #c4275f;
+}
+@media screen and (min-width: 800px) {
+  /* line 4, ../sass/site-parts/_hero.scss */
+  .hero article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 10, ../sass/site-parts/_hero.scss */
+  .hero article img {
+    display: inline-block;
+    margin-top: 29px;
+    width: 480px;
+    height: 329px;
+  }
+}
+/* line 19, ../sass/site-parts/_hero.scss */
+.hero h2 {
+  margin-top: 30px;
+  background-color: #6aad44;
+  color: white;
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 19, ../sass/site-parts/_hero.scss */
+  .hero h2 {
+    padding: 100px 40px;
+    width: 480px;
+    height: 300px;
+  }
+}
+/* line 32, ../sass/site-parts/_hero.scss */
+.hero .dot-nav {
+  margin: 0 auto 20px;
+  text-align: center;
+}
+/* line 35, ../sass/site-parts/_hero.scss */
+.hero .dot-nav li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dc5183;
+}
+/* line 41, ../sass/site-parts/_hero.scss */
+.hero .dot-nav li:nover {
+  background-color: #ac1549;
+}
+
+/* line 1, ../sass/site-parts/_product.scss */
+.products {
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+/* line 4, ../sass/site-parts/_product.scss */
+.products h2 {
+  position: relative;
+  margin: 40px 0 50px;
+  text-align: center;
+  color: #373737;
+  font-size: 36px;
+  font-weight: 500;
+}
+/* line 11, ../sass/site-parts/_product.scss */
+.products h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  height: 2px;
+  background-color: #ddd;
+}
+/* line 21, ../sass/site-parts/_product.scss */
+.products p {
+  text-align: center;
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 29, ../sass/site-parts/_product.scss */
+.products .products-list {
+  margin-top: 15px;
+}
+/* line 31, ../sass/site-parts/_product.scss */
+.products .products-list li {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 263px;
+  height: 280px;
+  border: 3px solid #e1e1e1;
+}
+/* line 38, ../sass/site-parts/_product.scss */
+.products .products-list li img {
+  width: 100%;
+}
+/* line 41, ../sass/site-parts/_product.scss */
+.products .products-list li .rollover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  opacity: 0;
+  background-color: #e1e1e1;
+}
+/* line 48, ../sass/site-parts/_product.scss */
+.products .products-list li .rollover:hover {
+  opacity: 1;
+}
+/* line 51, ../sass/site-parts/_product.scss */
+.products .products-list li .rollover h4 {
+  margin: 10px 0;
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 600;
+}
+/* line 58, ../sass/site-parts/_product.scss */
+.products .products-list li .rollover p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* line 62, ../sass/site-parts/_product.scss */
+.products .products-list li .rollover .blue-link {
+  text-align: center;
+  display: inline-block;
+  padding-top: 5px;
+  width: 104px;
+  height: 29px;
+  background-color: #2797d5;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 600;
+}
+/* line 74, ../sass/site-parts/_product.scss */
+.products .products-list li .rollover .green-link {
+  text-align: center;
+  display: inline-block;
+  padding-top: 5px;
+  width: 104px;
+  height: 29px;
+  background-color: #6aad44;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 600;
+}
+/* line 87, ../sass/site-parts/_product.scss */
+.products .products-list li h3 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 18px;
+  opacity: 0.9;
+  background-color: #e1e1e1;
+  height: 49px;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  overflow: hidden;
+  text-align: center;
+}
+/* line 4, ../sass/layout/_footer.scss */
+footer .container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c0c0c;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.1);
+}
+/* line 11, ../sass/layout/_footer.scss */
+footer .container h2 {
+  display: inline-block;
+  margin: 10px;
+}
+/* line 15, ../sass/layout/_footer.scss */
+footer .container .footer-description {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 20px;
+  max-width: 440px;
+  text-align: left;
+  font-family: Arial;
+}
+/* line 22, ../sass/layout/_footer.scss */
+footer .container .footer-description:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background-color: #121212;
+  background-image: linear-gradient(to top, #121212 0%, #333333 50%, #121212 100%);
+  box-shadow: 0 0 1.4px 1.6px rgba(0, 3, 1, 0.4);
+}
+/* line 34, ../sass/layout/_footer.scss */
+footer .container .footer-description:after {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background-color: #121212;
+  background-image: linear-gradient(to top, #121212 0%, #333333 50%, #121212 100%);
+  box-shadow: 0 0 1.4px 1.6px rgba(0, 3, 1, 0.4);
+}
+/* line 47, ../sass/layout/_footer.scss */
+footer .container .footer-description .copyright-articel {
+  margin-bottom: 8px;
+  color: white;
+  font-size: 12px;
+}
+/* line 52, ../sass/layout/_footer.scss */
+footer .container .footer-description .description {
+  margin-bottom: 8px;
+  color: #bfbfbf;
+  font-size: 11px;
+}
+/* line 57, ../sass/layout/_footer.scss */
+footer .container .footer-description span {
+  float: right;
+  color: #484848;
+  font-family: 'Myriad Pro Bold Condensed';
+  font-size: 15px;
+  font-weight: 700;
+}
+/* line 65, ../sass/layout/_footer.scss */
+footer .container .link-list {
+  max-width: 175px;
+  margin-left: 10px;
+  display: inline-block;
+}
+/* line 69, ../sass/layout/_footer.scss */
+footer .container .link-list li {
+  display: inline-block;
+}
+/* line 72, ../sass/layout/_footer.scss */
+footer .container .link-list a {
+  display: inline-block;
+  width: 84px;
+  height: 29px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+/* line 79, ../sass/layout/_footer.scss */
+footer .container .link-top {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  margin: 25px 0 0 10px;
+  color: #494949;
+  font-family: 'Myriad Pro Condensed';
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 89, ../sass/layout/_footer.scss */
+footer .container .link-top img {
+  position: absolute;
+  bottom: 15px;
+  left: 2px;
+}
+
+/* line 21, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/style.scss */
+.container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+/* line 12, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 19, ../sass/style.scss */
+img {
+  max-width: 100%;
+  height: 100%;
+}

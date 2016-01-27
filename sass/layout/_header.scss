@@ -1,0 +1,36 @@
+header{
+  background-color: white;
+  h1{
+    @media screen and (min-width: 800px){
+      float: left;
+    }
+  }
+  .main-navigation{
+    ul {
+      @media screen and (min-width: 800px){
+        float: right;
+      }
+      li {
+        display: block;
+        margin: 10px auto;
+        padding-top: 10px;
+        text-align: center;
+        @media screen and (min-width: 800px){
+          display: inline-block;
+          padding-right: 10px;
+        }
+        a {
+          padding-top: 10px;
+          font-size: 20px;
+          color: black;
+          transition: 0.5s;
+          &:hover {
+            border-top: 5px solid #2797d5;
+            color: #c2265c;
+          }
+        }
+
+      }
+    }
+  }
+}
